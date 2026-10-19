@@ -1,0 +1,18 @@
+# Terraform local state and provider cache
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Vault init secrets (generated during Stage 1 apply)
+.vault-token
+.vault-unseal-key
+
+# Downloaded binaries (fetched automatically by Terraform on first apply)
+client/
+plugin/
+
+# Vault runtime data (raft storage, init.json)
+data/
+
+# OS cruft
+.DS_Store
